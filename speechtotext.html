@@ -87,7 +87,10 @@
       <h2 class="center" id="headline">ถอดเสียงเป็นตัวอักษร</h2>
       <div id="info">
         <!--<p id="info_start">Click on the microphone icon and begin speaking.</p>-->
-        <p id="info_start">คลิกที่รูปไมโครโฟนเพื่อเริ่มพูด</p>
+        <p id="info_start">
+          เลือกภาษาที่ต้องการ เเละคลิกที่รูปไมโครโฟนเพื่อเริ่มพูด
+          กดอีกครั้งเพื่อหยุด
+        </p>
         <!--<p id="info_speak_now">Speak now.</p>-->
         <p id="info_speak_now">เริ่มพูดได้เลย</p>
         <p id="info_no_speech">
@@ -123,7 +126,7 @@
       </div>
       <div class="right-01">
         <button id="start_button" onclick="startButton(event)">
-          <img id="start_img" src="mic.gif" alt="Start" />
+          <img id="start_img" src="/images/mic.gif" alt="Start" />
         </button>
       </div>
       <div id="results">
@@ -254,17 +257,17 @@
         recognition.onstart = function () {
           recognizing = true;
           showInfo("info_speak_now");
-          start_img.src = "mic-animate.gif";
+          start_img.src = "/images/mic-animate.gif";
         };
 
         recognition.onerror = function (event) {
           if (event.error == "no-speech") {
-            start_img.src = "mic.gif";
+            start_img.src = "/images/mic.gif";
             showInfo("info_no_speech");
             ignore_onend = true;
           }
           if (event.error == "audio-capture") {
-            start_img.src = "mic.gif";
+            start_img.src = "/images/mic.gif";
             showInfo("info_no_microphone");
             ignore_onend = true;
           }
@@ -283,7 +286,7 @@
           if (ignore_onend) {
             return;
           }
-          start_img.src = "mic.gif";
+          start_img.src = "/images/mic.gif";
           if (!final_transcript) {
             showInfo("info_start");
             return;
@@ -381,7 +384,7 @@
         ignore_onend = false;
         final_span.innerHTML = "";
         interim_span.innerHTML = "";
-        start_img.src = "mic-slash.gif";
+        start_img.src = "/images/mic-slash.gif";
         showInfo("info_allow");
         showButtons("none");
         start_timestamp = event.timeStamp;
