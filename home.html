@@ -12,40 +12,30 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/"
     />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/carousel/"
-    />
-
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/cover/"
-    />
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     <!-- Custom styles for this template -->
     <link href="/css/navbar.css" rel="stylesheet" />
+
+    <!--paste this code under head tag or in a seperate js file. // Wait for window load-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+    <script>
+      $(window).load(function () {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
   </head>
 
   <body class="d-flex flex-column h-100">
+    <!-- Paste this code after body tag -->
+    <div class="se-pre-con"></div>
+    <!-- Ends -->
+    <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-lg">
         <a class="navbar-brand" href="#">Health Helper Chatbot</a>
@@ -74,9 +64,6 @@
             <li class="nav-item">
               <a class="nav-link" href="/about.html">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Chrome Browser.html">Test</a>
-            </li>
           </ul>
           <form class="d-flex">
             <input
@@ -92,7 +79,8 @@
         </div>
       </div>
     </nav>
-
+    <!--navbar-->
+    <!--content-->
     <main class="flex-shrink-0">
       <div class="container">
         <h1 class="mt-5">Health Helper Chatbot</h1>
@@ -122,7 +110,9 @@
         <img src="images/undraw_Chat_bot_re_e2gj-2.png" class="img-01" />
       </div>
     </div>
+    <!--content-->
 
+    <!--Footer-->
     <footer
       class="footer mt-auto py-2"
       style="background-color: rgba(0, 0, 0, 0.3)"
@@ -133,6 +123,8 @@
         <a class="text-white" href="https://getbootstrap.com/">Bootstrap.com</a>
       </div>
     </footer>
+    <!--Footer-->
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/loadImg.js"></script>
   </body>
 </html>
