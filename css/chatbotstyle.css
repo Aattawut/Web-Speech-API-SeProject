@@ -122,15 +122,15 @@ header {
 }
 .chatbot-area {
   float: right;
-  right: 80px;
+  right: 20px;
   left: auto;
 }
 
 .user-area img {
-  width: 100%;
+  width: 75%;
 }
 .chatbot-area img {
-  width: 100%;
+  width: 75%;
 }
 .user-area img {
   left: 0;
@@ -175,7 +175,6 @@ header {
   border-bottom: 0px solid transparent;
   bottom: 0;
   left: -20px;
-  overflow-y: scroll;
 }
 .chatarea-inner.chatbot:before {
   content: "";
@@ -185,20 +184,10 @@ header {
   border-bottom: 0px solid transparent;
   bottom: 0;
   right: -20px;
-  overflow-y: scroll;
 }
 
 .chatbot-area .chatarea-inner {
   float: left;
-}
-
-@media (max-width: 767px) {
-  .user-area img {
-    display: none;
-  }
-  .chatbot-area img {
-    display: none;
-  }
 }
 
 @media (max-width: 360px) {
@@ -210,7 +199,6 @@ header {
     border-bottom: 0px solid transparent;
     bottom: 0;
     left: -20px;
-    overflow: scroll;
   }
   .chatarea-inner.chatbot:before {
     content: "";
@@ -220,6 +208,44 @@ header {
     border-bottom: 0px solid transparent;
     bottom: 0;
     right: -20px;
-    overflow: scroll;
+  }
+}
+
+@media (max-width: 608px) {
+  .chatbot-area {
+    float: right;
+    right: 0px;
+    left: auto;
+  }
+
+  .user-area img {
+    width: 105%;
+  }
+  .chatbot-area img {
+    width: 105%;
+  }
+  .user-area {
+    left: 0px;
+    float: left;
+    right: auto;
+  }
+}
+@media (max-width: 550px) {
+  .chatbot-area {
+    float: right;
+    right: -20px;
+    left: auto;
+  }
+
+  .user-area img {
+    width: 105%;
+  }
+  .chatbot-area img {
+    width: 105%;
+  }
+  .user-area {
+    left: -10px;
+    float: left;
+    right: auto;
   }
 }
