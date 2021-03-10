@@ -130,7 +130,7 @@ header {
   width: 75%;
 }
 .chatbot-area img {
-  width: 75%;
+  width: 70%;
 }
 .user-area img {
   left: 0;
@@ -219,10 +219,10 @@ header {
   }
 
   .user-area img {
-    width: 105%;
+    width: 90%;
   }
   .chatbot-area img {
-    width: 105%;
+    width: 85%;
   }
   .user-area {
     left: 0px;
@@ -238,10 +238,10 @@ header {
   }
 
   .user-area img {
-    width: 105%;
+    width: 100%;
   }
   .chatbot-area img {
-    width: 105%;
+    width: 95%;
   }
   .user-area {
     left: -10px;
