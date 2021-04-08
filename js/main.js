@@ -122,7 +122,7 @@ recognition.onresult=function(e){
     let resultIndex = e.resultIndex;
     let transcript = e.results[resultIndex][0].transcript;
     chatareamain.appendChild(showusermsg(transcript));
-    chatbotvoice(transcript);
+    chatbotvoice(transcript);//ส่ง string ไปยังฟังฟ์ชัน function chatbotvoice(message){
     console.log(transcript);
 }
 //ฟังก์ชันกดปุ่มอีกครั้ง (กดหยุด) จะหยุดฟังเสียงของเรา
