@@ -117,7 +117,7 @@ function chatbotvoice(message){
     scrollWin();
     
 }
-
+//ผลลัพธ์จากการฟังเสียงพูดของเรา
 recognition.onresult=function(e){
     let resultIndex = e.resultIndex;
     let transcript = e.results[resultIndex][0].transcript;
@@ -125,11 +125,12 @@ recognition.onresult=function(e){
     chatbotvoice(transcript);
     console.log(transcript);
 }
+//ฟังก์ชันกดปุ่มอีกครั้ง (กดหยุด) จะหยุดฟังเสียงของเรา
 recognition.onend=function(){
     mic.style.background="#ff3b3b";
     
 }
-
+//ฟังก์ชันกดปุ่มเเล้วจะเริ่มฟังเสียง
 mic.addEventListener("click", function(){
     mic.style.background='#39c81f';
     recognition.start();
