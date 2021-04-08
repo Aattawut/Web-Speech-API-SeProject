@@ -88,7 +88,7 @@ header {
   width: 100%;
   float: left;
   margin-top: 60px;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 .main-01 button {
   background: #ff3b3b;
@@ -129,9 +129,10 @@ header {
   left: 80px;
   z-index: 99999;
 }
+/*ทับปุ่มแก้ได้ที่ตรงนี้*/
 .chatbot-area {
   float: right;
-  right: 80px;
+  right: 100px;
   left: auto;
 }
 
@@ -163,8 +164,8 @@ header {
 
 .chatarea-inner {
   float: left;
-  width: 80%;
-  padding: 15px;
+  width: 70%;
+  padding: 12px;
   color: #fff;
   position: relative;
   margin: 7px 0;
