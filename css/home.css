@@ -95,11 +95,15 @@ p {
     padding-top: 30px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 380px) {
   h1 {
-    font-size: 35px;
+    font-size: 40px;
+  }
+  img {
+    height: 1000px;
+    padding-top: 180px;
   }
   p {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
