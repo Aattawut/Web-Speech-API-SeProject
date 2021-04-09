@@ -98,7 +98,6 @@ p {
 @media (max-width: 650px) {
   h1 {
     font-size: 35px;
-    padding-top: 150px;
   }
   p {
     font-size: 10px;
