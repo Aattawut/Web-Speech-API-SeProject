@@ -1,6 +1,6 @@
 /* Show it is fixed to the top */
 body {
-  min-height: 55rem;
+  min-height: 55rem; /* แก้ตรงนี้ เพราะมันทำให้หน้าเว้บล้นออกมาทำให้ไม่เห้น footer*/
   padding-top: 4rem;
 }
 
