@@ -42,6 +42,8 @@ function showchatbotmsg(chatbotmsg){
 
 
 function chatbotvoice(message){
+
+
     var speech = new SpeechSynthesisUtterance();
     
     
@@ -112,7 +114,7 @@ function chatbotvoice(message){
     speechSynthesis.speak(speech);
     speech.lang = 'th-TH';
     window.speechSynthesis.speak(speech);
-    chatareamain.appendChild(showchatbotmsg(speech.text));
+    chatareamain.appendChild(showchatbotmsg(speech.text)); //โชว์ข้อความที่ตรงกับเงื่อนไขไปยังหน้าเว็บ speech.text = finalresult;
 
     scrollWin();
     
@@ -120,9 +122,9 @@ function chatbotvoice(message){
 //ผลลัพธ์จากการฟังเสียงพูดของเรา
 recognition.onresult=function(e){
     let resultIndex = e.resultIndex;
-    let transcript = e.results[resultIndex][0].transcript;
-    chatareamain.appendChild(showusermsg(transcript));
-    chatbotvoice(transcript);//ส่ง string ไปยังฟังฟ์ชัน function chatbotvoice(message){
+    let transcript = e.results[resultIndex][0].transcript; //เก็บ string ที่ได้มาจาก web speech api มาเก็บไว้ในตัวเเปล transcript
+    chatareamain.appendChild(showusermsg(transcript)); //เอาข้อความของเราไปโชว์ในหน้าเว็บ
+    chatbotvoice(transcript);//ส่ง string ไปยังฟังฟ์ชัน function chatbotvoice(message) เพื่อที่จะหาว่าคำพูดตรงกับเงื่อนไขไหนเเล้วจะตอบกลับมา
     console.log(transcript);
 }
 //ฟังก์ชันกดปุ่มอีกครั้ง (กดหยุด) จะหยุดฟังเสียงของเรา
