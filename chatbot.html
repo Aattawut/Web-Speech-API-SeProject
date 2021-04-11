@@ -15,6 +15,17 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="/css/chatbotstyle.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="/css/home.css" rel="stylesheet" />
+    <!--paste this code under head tag or in a seperate js file. // Wait for window load-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -32,11 +43,20 @@
       }
     </style>
 
-    <!-- Custom styles for this template -->
-    <link href="/css/chatbotstyle.css" rel="stylesheet" />
+    <script>
+      $(window).load(function () {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
   </head>
 
   <body class="d-flex flex-column h-100">
+    <div class="container-sm">
+      <!-- Paste this code after body tag -->
+      <div class="se-pre-con"></div>
+      <!-- Ends -->
+    </div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-lg">
         <a class="navbar-brand" href="#">Health Helper Chatbot</a>

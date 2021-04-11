@@ -18,7 +18,7 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 99999;
   background: url(/images/shark.gif) center no-repeat #fff;
 }
 @font-face {
@@ -117,7 +117,7 @@ header {
   align-items: center;
   position: fixed;
   left: 80px;
-  z-index: 99999;
+  z-index: 999;
 }
 .chatbot-area {
   width: 20%;
@@ -127,7 +127,7 @@ header {
   align-items: center;
   position: fixed;
   left: 80px;
-  z-index: 99999;
+  z-index: 999;
 }
 /*ทับปุ่มแก้ได้ที่ตรงนี้*/
 .chatbot-area {
